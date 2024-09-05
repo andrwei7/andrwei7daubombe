@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+.content{
+    text-align: auto;
+}
+
+.content h1{
+    font-size: 95px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.content a{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s
+}
+
+.content a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-video{
+        width: 100%;
+        height: auto;   
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .background-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1f20;
+}
+
+h1 { display: inline-block;
+
+    font-size: 5em;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 4s steps(10),
+        cursor .5s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+    50% { border-color: transparent}
+}
+
+/* typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+.butoane{
+    align-items: center;
+    justify-content: center;
+}
+
+
